@@ -1,0 +1,94 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Montserrat&display=swap'); */
+
+.loseIt {
+    -fx-font-size: 50;
+    -fx-text-fill: #8dab16;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(one-pass-box, #414e0c, 2, 2, 2, 2);
+}
+
+.calorie {
+    -fx-font-size: 50;
+    -fx-text-fill: #8dab16;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(one-pass-box, #414e0c, 2, 2, 2, 2);
+}
+
+.change {
+    -fx-text-fill: #000000;
+    -fx-background-color: transparent;
+    -fx-font-size: 20;
+    -fx-underline: true;
+    -fx-font-weight: bold;
+}
+
+.change:hover {
+    -fx-text-fill: #728429;
+    -fx-background-color: transparent;
+    -fx-font-size: 20;
+    -fx-underline: true;
+}
+
+.nameGender {
+    -fx-font-size: 15;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    /* -fx-background-color: #728429; */
+    -fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #8dab16, #728429);
+    -fx-background-radius: 10;
+    -fx-padding: 4px 15px;
+    -fx-effect: dropshadow(one-pass-box, #414e0c, 2, 2, 2, 2);
+    -fx-font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.user {
+    -fx-font-size: 18;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+
+
+.textfield {
+    -fx-background-color: #FFFACE;
+    -fx-font-weight: bold;
+    -fx-pref-width: 250px;
+    -fx-pref-height: 35px;
+    -fx-min-width: 250px;
+    -fx-min-height: 35px;
+    -fx-max-width: 250px;
+    -fx-max-height: 35px;
+    -fx-border-color: gray;
+}
+
+.background {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 200px;
+    -fx-min-width: 300px;
+    -fx-min-height: 300px;
+    -fx-max-width: 300px;
+    -fx-max-height: 300px;
+    -fx-background-color: #FAEF86;
+    -fx-background-radius: 10;
+}
+
+.btnStart {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 30;
+    /* -fx-background-color: #728429; */
+    -fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #8dab16, #728429);
+    -fx-background-radius: 10;
+    -fx-padding: 7px 8px;
+    -fx-effect: dropshadow(one-pass-box, #414e0c, 2, 2, 2, 2);
+}
+
+.btnStart:hover {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 30;
+    /* -fx-background-color: #5f7211; */
+    -fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #728429, #8dab16);
+    -fx-padding: 7px 8px;
+    -fx-effect: dropshadow(one-pass-box, #414e0c, 2, 2, 2, 2);
+}

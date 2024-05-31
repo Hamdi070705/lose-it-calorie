@@ -1,0 +1,81 @@
+.loseIt {
+    -fx-font-size: 50;
+    -fx-text-fill: #8dab16;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(one-pass-box, #414e0c, 2, 2, 2, 2);
+}
+
+.calorie {
+    -fx-font-size: 50;
+    -fx-text-fill: #8dab16;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(one-pass-box, #414e0c, 2, 2, 2, 2);
+}
+
+.your {
+    -fx-font-size: 15;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    /* -fx-background-color: #728429; */
+    -fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #8dab16, #728429);
+    -fx-background-radius: 10;
+    -fx-padding: 4px 15px;
+    -fx-effect: dropshadow(one-pass-box, #414e0c, 2, 2, 2, 2);
+    -fx-font-family: Arial, Helvetica, sans-serif;
+}
+
+.user {
+    -fx-font-size: 18;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+
+.background {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 350px;
+    -fx-min-width: 300px;
+    -fx-min-height: 350px;
+    -fx-max-width: 300px;
+    -fx-max-height: 350px;
+    -fx-background-color: #FAEF86;
+    -fx-background-radius: 10;
+}
+
+.value {
+    -fx-font-size: 50;
+    -fx-text-fill: #728429;
+    -fx-font-weight: bold;
+}
+
+.userLoseIt {
+    -fx-font-size: 25;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+
+.userCalorie {
+    -fx-font-size: 35;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+
+.btnFinish {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 30;
+    /* -fx-background-color: #728429; */
+    -fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #8dab16, #728429);
+    -fx-background-radius: 10;
+    -fx-padding: 7px 8px;
+    -fx-effect: dropshadow(one-pass-box, #414e0c, 2, 2, 2, 2);
+}
+
+.btnFinish:hover {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 30;
+    /* -fx-background-color: #5f7211; */
+    -fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #728429, #8dab16);
+    -fx-padding: 7px 8px;
+    -fx-effect: dropshadow(one-pass-box, #414e0c, 2, 2, 2, 2);
+}

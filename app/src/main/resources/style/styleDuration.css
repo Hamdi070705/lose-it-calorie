@@ -1,0 +1,87 @@
+.loseIt {
+    -fx-font-size: 50;
+    -fx-text-fill: #8dab16;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(one-pass-box, #414e0c, 2, 2, 2, 2);
+}
+
+.calorie {
+    -fx-font-size: 50;
+    -fx-text-fill: #8dab16;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(one-pass-box, #414e0c, 2, 2, 2, 2);
+}
+
+.background {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 420px;
+    -fx-min-width: 300px;
+    -fx-min-height: 420px;
+    -fx-max-width: 300px;
+    -fx-max-height: 420px;
+    -fx-background-color: #FAEF86;
+    -fx-background-radius: 10;
+}
+
+.user {
+    -fx-font-size: 18;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+
+.your {
+    -fx-font-size: 13;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    /* -fx-background-color: #728429; */
+    -fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #8dab16, #728429);
+    -fx-background-radius: 10;
+    -fx-padding: 3px 15px;
+    -fx-effect: dropshadow(one-pass-box, #414e0c, 2, 2, 2, 2);
+    -fx-font-family: Arial, Helvetica, sans-serif;
+}
+
+.user {
+    -fx-font-size: 16;
+    -fx-text-fill: #000000;
+    -fx-font-weight: bold;
+}
+
+.textfield {
+    -fx-background-color: #FFFACE;
+    -fx-font-weight: bold;
+    -fx-pref-width: 250px;
+    -fx-pref-height: 35px;
+    -fx-min-width: 250px;
+    -fx-min-height: 35px;
+    -fx-max-width: 250px;
+    -fx-max-height: 35px;
+    -fx-border-color: gray;
+    -fx-border-width: 0 0 2px 0;
+}
+
+.status {
+    -fx-font-weight: bold;
+    -fx-text-fill: rgb(162, 13, 13);
+}
+
+.btnBackNext {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+    /* -fx-background-color: #728429; */
+    -fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #8dab16, #728429);
+    -fx-background-radius: 10;
+    -fx-padding: 7px 8px;
+    -fx-effect: dropshadow(one-pass-box, #414e0c, 2, 2, 2, 2);
+}
+
+.btnBackNext:hover {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 20;
+    /* -fx-background-color: #5f7211; */
+    -fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #728429, #8dab16);
+    -fx-padding: 7px 8px;
+    -fx-effect: dropshadow(one-pass-box, #414e0c, 2, 2, 2, 2);
+}

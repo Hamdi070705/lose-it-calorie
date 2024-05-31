@@ -1,0 +1,64 @@
+.loseIt {
+    -fx-font-size: 50;
+    -fx-text-fill: #8dab16;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(one-pass-box, #414e0c, 2, 2, 2, 2);
+}
+
+.calorie {
+    -fx-font-size: 50;
+    -fx-text-fill: #8dab16;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(one-pass-box, #414e0c, 2, 2, 2, 2);
+}
+
+.btnBack{
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 30;
+    /* -fx-background-color: #728429; */
+    -fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #8dab16, #728429);
+    -fx-background-radius: 10;
+    -fx-padding: 7px 8px;
+    -fx-effect: dropshadow(one-pass-box, #414e0c, 2, 2, 2, 2);
+}
+
+.btnBack:hover {
+    -fx-text-fill: #ffffff;
+    -fx-font-weight: bold;
+    -fx-font-size: 30;
+    /* -fx-background-color: #5f7211; */
+    -fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #728429, #8dab16);
+    -fx-padding: 7px 8px;
+    -fx-effect: dropshadow(one-pass-box, #414e0c, 2, 2, 2, 2);
+}
+
+.btnIcon {
+    -fx-background-color: transparent;
+    -fx-effect: dropshadow(one-pass-box, #414e0c, 2, 2, 2, 2);
+    /* -fx-background-radius: 0;
+    -fx-border-color: transparent; */
+}
+
+.select {
+    -fx-font-size: 15;
+    -fx-text-fill: #FFFFFF;
+    -fx-font-weight: bold;
+    /* -fx-background-color: #728429; */
+    -fx-background-color: linear-gradient(from 0% 0% to 0% 100%, #8dab16, #728429);
+    -fx-background-radius: 10;
+    -fx-padding: 4px 15px;
+    -fx-effect: dropshadow(one-pass-box, #414e0c, 2, 2, 2, 2);
+    -fx-font-family: Arial, Helvetica, sans-serif;
+}
+
+.background {
+    -fx-pref-width: 300px;
+    -fx-pref-height: 390px;
+    -fx-min-width: 300px;
+    -fx-min-height: 390px;
+    -fx-max-width: 300px;
+    -fx-max-height: 390px;
+    -fx-background-color: #FAEF86;
+    -fx-background-radius: 10;
+}
