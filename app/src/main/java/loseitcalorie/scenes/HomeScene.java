@@ -12,7 +12,7 @@ import javafx.stage.Stage;
 import loseitcalorie.controllers.UserController;
 import loseitcalorie.models.User;
 
-public class HomeScene {
+public class HomeScene  {
     private Stage stage;
 
     public HomeScene(Stage stage) {
@@ -23,7 +23,7 @@ public class HomeScene {
         User user = UserController.isUserLoggedIn();
         if (user != null) {
             ApplyScene applyScene = new ApplyScene(stage);
-            applyScene.showApplyScene(user);
+            applyScene.show(user);
             return;
         }
 
@@ -97,7 +97,7 @@ public class HomeScene {
 
             if (isSuccess) {
                 ApplyScene applyScene = new ApplyScene(stage);
-                applyScene.showApplyScene(loginUser);
+                applyScene.show(loginUser);
             }
         });
 

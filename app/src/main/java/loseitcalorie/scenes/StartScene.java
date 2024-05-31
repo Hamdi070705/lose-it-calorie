@@ -11,16 +11,17 @@ import javafx.scene.layout.Priority;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import loseitcalorie.Abstract.AbstractScene;
 import loseitcalorie.models.User;
 
-public class StartScene {
-    private Stage stage;
+public class StartScene extends AbstractScene {
 
     public StartScene(Stage stage) {
-        this.stage = stage;
+        super(stage);
     }
 
-    public void showStartScene(User user) {
+    @Override
+    public void show(User user) {
         ApplyScene applyScene = new ApplyScene(stage);
         ActivityScene activityScene = new ActivityScene(stage);
 
@@ -90,7 +91,7 @@ public class StartScene {
         hBoxButton.getChildren().addAll(btnBack, spacer, btnNext);
 
         btnBack.setOnAction(e -> {
-            applyScene.showApplyScene(user);
+            applyScene.show(user);
         });
 
         btnNext.setOnAction(e -> {
@@ -103,7 +104,7 @@ public class StartScene {
                 return;
             }
             User loginUser = new User(name, gender, weight, age);
-            activityScene.showActivityScene(loginUser);
+            activityScene.show(loginUser);
 
         });
 

@@ -11,16 +11,17 @@ import javafx.scene.layout.Priority;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import loseitcalorie.Abstract.AbstractScene;
 import loseitcalorie.models.User;
 
-public class DurationScene {
-    private Stage stage;
-
+public class DurationScene extends AbstractScene {
+    
     public DurationScene(Stage stage) {
-        this.stage = stage;
+        super(stage);
     }
 
-    public void showDurationScene(User user) {
+    @Override
+    public void show(User user) {
         FinalScene finalScene = new FinalScene(stage);
         ActivityScene activityScene = new ActivityScene(stage);
 
@@ -108,11 +109,11 @@ public class DurationScene {
             String duraionActicity = inputDuration.getText();
             String activityUser = user.getActivity();
             User loginUser = new User(nameUser, genderUser, activityUser, weightUser, ageUser, duraionActicity);
-            finalScene.showFinalScene(loginUser);
+            finalScene.show(loginUser);
         });
 
         btnBack.setOnAction(e -> {
-            activityScene.showActivityScene(user);
+            activityScene.show(user);
         });
 
         VBox root = new VBox(layout1, background, hBoxButton);

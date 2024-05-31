@@ -7,16 +7,18 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import loseitcalorie.Abstract.AbstractScene;
 import loseitcalorie.models.User;
 
-public class FinalScene {
-    private Stage stage;
+public class FinalScene extends AbstractScene {
+    
 
     public FinalScene(Stage stage) {
-        this.stage = stage;
+        super(stage);
     }
 
-    public void showFinalScene(User user) {
+    @Override
+    public void show(User user) {
         ApplyScene applyScene = new ApplyScene(stage);
 
         Label label1 = new Label("LOSE IT");
@@ -47,16 +49,12 @@ public class FinalScene {
         switch (activityUser) {
             case "Running":
                 mets = 8.0;
-                break;
             case "Swimming":
                 mets = 6.0;
-                break;
             case "Cycling":
                 mets = 3.5;
-                break;
             case "Weightlifting":
                 mets = 3.0;
-                break;
             case "Walking":
                 mets = 2.5;
             case "Skipping":
@@ -79,7 +77,7 @@ public class FinalScene {
         layoutFinish.getChildren().addAll(btnFinish);
 
         btnFinish.setOnAction(e -> {
-            applyScene.showApplyScene(user);
+            applyScene.show(user);
         });
 
         VBox layout1 = new VBox();
@@ -114,6 +112,5 @@ public class FinalScene {
         scene.getStylesheets().add(getClass().getResource("/style/styleFinal.css").toExternalForm());
         stage.setScene(scene);
         stage.show();
-    
     }
 }

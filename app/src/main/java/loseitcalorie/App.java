@@ -16,7 +16,7 @@ public class App extends Application {
         stage.setTitle("Lose it Calorie");
 
         HomeScene homeScene = new HomeScene(stage);
-        homeScene.showHomeScene();
+        homeScene.showHomeScene();;
         DbConfig.getConnection();
     }
 

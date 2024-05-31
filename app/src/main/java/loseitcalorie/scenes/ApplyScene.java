@@ -8,16 +8,18 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import loseitcalorie.models.User;
+import loseitcalorie.Abstract.AbstractScene;
 import loseitcalorie.controllers.UserController;
 
-public class ApplyScene {
-    private Stage stage;
+public class ApplyScene extends AbstractScene  {
+    
 
     public ApplyScene(Stage stage) {
-        this.stage = stage;
+        super(stage);
     }
 
-    public void showApplyScene(User user) {
+    @Override
+    public void show(User user) {
         HomeScene homeScene = new HomeScene(stage);
         StartScene startScene = new StartScene(stage);
 
@@ -73,11 +75,11 @@ public class ApplyScene {
 
         change.setOnAction(e -> {
            UserController.deleteUser(user.getName());
-           homeScene.showHomeScene();
+           homeScene.showHomeScene();;
         });
 
         btnStart.setOnAction(e -> {
-            startScene.showStartScene(user);
+            startScene.show(user);
         });
         
         VBox root = new VBox(layout1, background, layoutStart);
@@ -86,6 +88,7 @@ public class ApplyScene {
         scene.getStylesheets().add(getClass().getResource("/style/styleApply.css").toExternalForm());
         stage.setScene(scene);
         stage.show();
+        
     }
 
 }

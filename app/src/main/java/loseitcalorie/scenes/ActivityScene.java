@@ -12,16 +12,17 @@ import javafx.scene.layout.Priority;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
+import loseitcalorie.Abstract.AbstractScene;
 import loseitcalorie.models.User;
 
-public class ActivityScene {
-    private Stage stage;
-
+public class ActivityScene extends AbstractScene {
+    
     public ActivityScene(Stage stage) {
-        this.stage = stage;
+        super(stage);
     }
 
-    public void showActivityScene(User user) {
+    @Override
+    public void show(User user) {
         StartScene startScene = new StartScene(stage);
         DurationScene durationScene = new DurationScene(stage);
 
@@ -69,7 +70,7 @@ public class ActivityScene {
 
         buttonRun.setOnAction(e -> {
             User loginUser = new User(name, gender, "Running", weight, age);
-            durationScene.showDurationScene(loginUser);
+            durationScene.show(loginUser);
         });
         
         Image swimming = new Image(getClass().getResourceAsStream("/icon/swimming.png"));
@@ -96,7 +97,7 @@ public class ActivityScene {
 
         buttonSwimming.setOnAction(e -> {
             User loginUser = new User(name, gender, "Swimming", weight, age);
-            durationScene.showDurationScene(loginUser);
+            durationScene.show(loginUser);
         });
         
         Image bycicle = new Image(getClass().getResourceAsStream("/icon/bycicle.png"));
@@ -123,7 +124,7 @@ public class ActivityScene {
 
         buttonBycicle.setOnAction(e -> {
             User loginUser = new User(name, gender, "Cycling", weight, age);
-            durationScene.showDurationScene(loginUser);
+            durationScene.show(loginUser);
         });
         
         Image weightlifting = new Image(getClass().getResourceAsStream("/icon/weightlifting.png"));
@@ -150,7 +151,7 @@ public class ActivityScene {
 
         buttonWeightlifting.setOnAction(e -> {
             User loginUser = new User(name, gender, "Weightlifting", weight, age);
-            durationScene.showDurationScene(loginUser);
+            durationScene.show(loginUser);
         });
         
         Image walking = new Image(getClass().getResourceAsStream("/icon/walking.png"));
@@ -177,7 +178,7 @@ public class ActivityScene {
 
         buttonWalking.setOnAction(e -> {
             User loginUser = new User(name, gender, "Walking", weight, age);
-            durationScene.showDurationScene(loginUser);
+            durationScene.show(loginUser);
         });
         
         Image skipping = new Image(getClass().getResourceAsStream("/icon/skipping.png"));
@@ -204,7 +205,7 @@ public class ActivityScene {
 
         buttonSkipping.setOnAction(e -> {
             User loginUser = new User(name, gender, "Skipping", weight, age);
-            durationScene.showDurationScene(loginUser);
+            durationScene.show(loginUser);
         });
 
         Region spacer = new Region();
@@ -238,7 +239,7 @@ public class ActivityScene {
         back.getChildren().addAll(btnBack);
 
         btnBack.setOnAction(e -> {
-            startScene.showStartScene(user);
+            startScene.show(user);
         });
 
         VBox root = new VBox(layout1, background, back);
@@ -248,6 +249,7 @@ public class ActivityScene {
         scene.getStylesheets().add(getClass().getResource("/style/styleActivity.css").toExternalForm());
         stage.setScene(scene);
         stage.show();
+        
     }     
 
 }
