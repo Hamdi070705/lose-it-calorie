@@ -8,7 +8,7 @@ import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
 import loseitcalorie.models.User;
-import loseitcalorie.Abstract.AbstractScene;
+import loseitcalorie.abstracts.AbstractScene;
 import loseitcalorie.controllers.UserController;
 
 public class ApplyScene extends AbstractScene  {

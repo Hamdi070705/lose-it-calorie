@@ -11,7 +11,7 @@ import javafx.scene.layout.Priority;
 import javafx.scene.layout.Region;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import loseitcalorie.Abstract.AbstractScene;
+import loseitcalorie.abstracts.AbstractScene;
 import loseitcalorie.models.User;
 
 public class DurationScene extends AbstractScene {

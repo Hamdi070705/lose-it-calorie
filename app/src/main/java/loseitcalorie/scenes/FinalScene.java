@@ -7,7 +7,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.layout.VBox;
 import javafx.stage.Stage;
-import loseitcalorie.Abstract.AbstractScene;
+import loseitcalorie.abstracts.AbstractScene;
 import loseitcalorie.models.User;
 
 public class FinalScene extends AbstractScene {

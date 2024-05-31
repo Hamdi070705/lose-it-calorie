@@ -1,4 +1,4 @@
-package loseitcalorie.Abstract;
+package loseitcalorie.abstracts;
 
 import javafx.stage.Stage;
 import loseitcalorie.models.User;
